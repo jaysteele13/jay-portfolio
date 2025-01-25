@@ -18,7 +18,7 @@ module.exports = {
         xs: '450px',
       },
       backgroundImage: {
-        'hero-pattern': `url(/sun_more_fade.png)`, // my bg
+        'hero-pattern': `url(/sun_fade_2mb.png)`, // my bg
       },
     },
   },

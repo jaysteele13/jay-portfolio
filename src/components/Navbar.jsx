@@ -7,11 +7,27 @@ import { styles } from '../styles';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = '/Jay_Steele.pdf';
+    const resumeUrl = 'https://jaysteele13.github.io/jay-portfolio/public/Jay_Steele.pdf';
     window.open(resumeUrl);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Check if screen width is less than 640px
+    };
+
+    // Set the initial screen size status
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (toggle) {
@@ -26,7 +42,7 @@ const Navbar = () => {
           key={link.id}
           className={`${
             active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
+          } hover:text-white ${isSmallScreen ? 'text-[16px]' : 'text-[20px]'} font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
             if (isSecondary) {
@@ -34,15 +50,14 @@ const Navbar = () => {
             }
           }}
         >
-          <a href={`#${link.id}`}>{link.title}</a>
+          <a className="text-white"  href={`#${link.id}` }>{link.title}</a>
         </li>
       ))}
       <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
+        className={`text-$
+          {isSecondary ? 'white' : 'white'} hover:text-white ${isSmallScreen ? 'text-[16px]' : 'text-[20px]'} font-medium cursor-pointer`}
       >
-        <button onClick={toggleResume}>Resume</button>
+        <a href="https://jaysteele13.github.io/jay-portfolio/Jay_Steele.pdf" rel="noopener noreferrer" target='_blank'>Resume</a>
       </li>
     </ul>
   );
@@ -62,7 +77,7 @@ const Navbar = () => {
             }}
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-            <p className="text-white text-[20px] font-bold cursor-pointer flex">
+            <p className={`text-white ${isSmallScreen ? 'text-[16px]' : 'text-[20px]'} font-bold cursor-pointer flex`}>
               JAY&nbsp;
               <span className="sm:block hidden">STEELE</span>
             </p>

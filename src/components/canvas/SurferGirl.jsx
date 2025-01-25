@@ -16,13 +16,11 @@ const SurferModel = ({ isMobile }) => {
     }
   );
 
-
-
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[-20, 50, 30]}
         angle={0.12}
         penumbra={1}
         intensity={1}
@@ -32,9 +30,9 @@ const SurferModel = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -6.25, -1.5]}
-        rotation={[-0.01, -1.30, -0.1]}
+        scale={isMobile ? 0.43: 0.50}
+        position={isMobile ? [0, -3.25, -3.0] : [0, -4.25, -3.5]}
+        rotation={[-0.0, -1.0, -0.1]}
       />
     </mesh>
   );
@@ -66,7 +64,7 @@ const SurferCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [25, 5, 20], fov: 18 }}
+      camera={{ position: [25, 10, 25], fov: 10 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
