@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
       </div>
 
-        <SharkCanvas/>
+        {isSmallScreen ? <SurferCanvas/>  : <SharkCanvas/>}
       {/* <SurferCanvas /> */}
     </section>
   );
