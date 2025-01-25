@@ -126,7 +126,7 @@ export const projects = [
   {
     name: "JSurf",
     description:
-      "Barebones Surf Forecasting Application",
+      "Barebones Surf Forecasting Application designed for the north coast.",
     tags: [
       { name: "Swift", color: "blue-text-gradient" },
       { name: "Stormglass API", color: "green-text-gradient" },

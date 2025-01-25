@@ -66,7 +66,7 @@ const SurferCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [25, 5, 25], fov: 18 }}
+      camera={{ position: [25, 5, 20], fov: 18 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

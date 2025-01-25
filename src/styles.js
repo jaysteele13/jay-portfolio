@@ -15,6 +15,9 @@ const styles = {
 
   leadColour:
     "#FDFD96",
+  
+  offColour:
+    "#fe019a",
 
   vibrantGradient: 
     "linear-gradient(to bottom, #7F00FF, #E100FF)"
