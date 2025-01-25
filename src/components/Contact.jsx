@@ -71,9 +71,9 @@ const Contact = () => {
         "template_mf5x3bh",
         {
           from_name: form.name,
-          to_name: "Lohit Kolluri",
+          to_name: "Jay Steele",
           from_email: form.email,
-          to_email: "lohitkolluri@gmail.com",
+          to_email: "jaysteele2003@gmail.com",
           message: form.message,
         },
         "p-gXzzyvEhPaJ0XA-"

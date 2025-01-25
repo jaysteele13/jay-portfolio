@@ -3,6 +3,7 @@ import {
   python,
   java,
   cpp,
+  typescript,
   javascript,
   html,
   css,
@@ -20,6 +21,14 @@ import {
   mathwork,
   CompileVortex,
   eduskill,
+  swift,
+  moods,
+  ram_watcher,
+  jsurf,
+  ribit,
+  liberty,
+  lsfx,
+  causeway
 } from "../assets";
 
 export const navLinks = [
@@ -32,16 +41,20 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "project",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
   { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "TypeScript", icon: typescript },
+  { title: "Swift", icon: swift },
+  { title: "C++", icon: cpp },
 ];
 
 export const technologies = [
@@ -57,114 +70,92 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    title: "Intern Software Engineer",
+    company_name: "Liberty IT",
+    icon: liberty,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "June 2023 - September 2024",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
-      "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
+      "Helped design and implement authentication systems for an Certainly.",
+      "Worked closely with cross-functional teams, facilitating seamless communication between security teams and UX designers to ensure user-friendly yet robust solutions.",
+      "Leveraged agile development practices to deliver industry-grade products, conducted threat modeling, performed code analysis, and managed bug resolution.",
+      "Also presented technical solutions and progress updates to key stakeholders and clientele."
     ],
   },
   {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    title: "Runner and Camera Crew",
+    company_name: "LSFX Productions",
+    icon: lsfx,
     iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
+    date: "May 2023 - September 2023",
     points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
+      "This involved active teamwork to set up appliances and kit for important events.",
+      "Thrived in high-pressure filming environments.",
+      "Managed audio setups for participants whilst engaging contestants to maintain energy and enthusiasm on set.",
     ],
   },
   {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
+    title: "Catering Assistant",
+    company_name: "Giants Causeway, National Trust Café",
+    icon: causeway,
     iconBg: "#161329",
-    date: "June 2023 - July 2023",
+    date: "September 2022 - January 2023",
     points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+      "Excelled in a fast-paced environment by multitasking across diverse responsibilities, including food preparation and coffee-making.",
+      "Delivered great customer service while efficiently handling cashier transactions.",
     ],
   },
+  
 ];
 
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Moods on Display",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "Mobile Application that sorts images and generates audio synced slideshows based off of users emotion using personally trained Deep Convolutional Neural Network.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "Dart", color: "blue-text-gradient" },
+      { name: "Flutter", color: "green-text-gradient" },
+      { name: "Python", color: "green-text-gradient" },
+      { name: "Machine Learning", color: "pink-text-gradient" },
+      { name: "Transfer Learning", color: "green-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: moods,
+    source_code_link: "https://github.com/jaysteele13/moods_on_display",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "JSurf",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "Barebones Surf Forecasting Application",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "Swift", color: "blue-text-gradient" },
+      { name: "Stormglass API", color: "green-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: jsurf,
+    source_code_link: "https://github.com/jaysteele13/JsurfV1",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Mr Ribbits",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "Autonomous Robot that plays tracks peoples faces.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "C++", color: "blue-text-gradient" },
+      { name: "Arduino", color: "green-text-gradient" },
+      { name: "Robotics", color: "pink-text-gradient" },
     ],
-    image: mhft,
+    image: ribit,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://github.com/jaysteele13/mr_ribbits",
   },
   {
-    name: "PayloadMaster",
+    name: "RAM_Watcher",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Python App to monitor RAM usage leveraging Windows Task Manager",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Terminal", color: "blue-text-gradient" },
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
-  },
-  {
-    name: "CompileVortex",
-    description:
-      "Tool to automate payload creation using the Metasploit framework",
-    tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
-    ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  },
-  {
-    name: "Sketcher",
-    description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-    tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
-    ],
-
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    image: ram_watcher,
+    source_code_link: "https://github.com/jaysteele13/RAM_Watcher",
   },
 ];
