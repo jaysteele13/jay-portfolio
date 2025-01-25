@@ -57,7 +57,7 @@ const Navbar = () => {
         className={`text-$
           {isSecondary ? 'white' : 'white'} hover:text-white ${isSmallScreen ? 'text-[16px]' : 'text-[20px]'} font-medium cursor-pointer`}
       >
-        <a href="https://jaysteele13.github.io/jay-portfolio/Jay_Steele.pdf" rel="noopener noreferrer" target='_blank'>Resume</a>
+        <a href="https://jaysteele13.github.io/jay-portfolio/Jay_Steele_CV.pdf" rel="noopener noreferrer" target='_blank'>Resume</a>
       </li>
     </ul>
   );
