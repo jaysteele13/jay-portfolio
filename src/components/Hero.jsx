@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
-import { SurferCanvas } from "./canvas";
+import { SurferCanvas, SharkCanvas } from "./canvas";
 import Typewriter from "typewriter-effect";
 import{ useState, useEffect } from "react";
 
@@ -8,6 +8,7 @@ import{ useState, useEffect } from "react";
 
 const Hero = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    
   useEffect(() => {
       const handleResize = () => {
         setIsSmallScreen(window.innerWidth < 640); // Check if screen width is less than 640px
@@ -46,7 +47,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <SurferCanvas />
+        <SharkCanvas/>
+      {/* <SurferCanvas /> */}
     </section>
   );
 };

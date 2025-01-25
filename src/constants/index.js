@@ -87,7 +87,7 @@ export const experiences = [
     company_name: "LSFX Productions",
     icon: lsfx,
     iconBg: "#161329",
-    date: "May 2023 - September 2023",
+    date: "September 2023",
     points: [
       "This involved active teamwork to set up appliances and kit for important events.",
       "Thrived in high-pressure filming environments.",

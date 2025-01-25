@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wave with Shark and surfers created in SculptrVR
+* source:	https://sketchfab.com/3d-models/wave-with-shark-and-surfers-created-in-sculptrvr-1e1de80e5169405789c206bd898586cf
+* author:	topgunsi (https://sketchfab.com/topgunsi)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wave with Shark and surfers created in SculptrVR" (https://sketchfab.com/3d-models/wave-with-shark-and-surfers-created-in-sculptrvr-1e1de80e5169405789c206bd898586cf) by topgunsi (https://sketchfab.com/topgunsi) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

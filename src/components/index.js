@@ -2,6 +2,7 @@ import {
   EarthCanvas,
   BallCanvas,
   SurferCanvas,
+  SharkCanvas,
   StarsCanvas,
 } from "./canvas";
 
@@ -25,4 +26,5 @@ export {
   BallCanvas,
   SurferCanvas,
   StarsCanvas,
+  SharkCanvas
 };

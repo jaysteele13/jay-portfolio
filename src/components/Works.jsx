@@ -35,7 +35,10 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <a href={source_code_link} target='_blank' class="group transition duration-300">
+        <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-br from-yellow-400 to-pink-300"></span>
+        </a>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">

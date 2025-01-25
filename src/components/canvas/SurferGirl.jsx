@@ -30,9 +30,9 @@ const SurferModel = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.43: 0.50}
-        position={isMobile ? [0, -3.25, -3.0] : [0, -4.25, -3.5]}
-        rotation={[-0.0, -1.0, -0.1]}
+        scale={isMobile ? 0.43: 0.60}
+        position={isMobile ? [5, -6.25, -3.0] : [0.1, -5.75, -1]}
+        rotation={[-0.05, -1.40, -0.1]}
       />
     </mesh>
   );
