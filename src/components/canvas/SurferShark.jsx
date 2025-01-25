@@ -74,6 +74,11 @@ const SharkCanvas = () => {
            minPolarAngle={Math.PI / 2} // Keeps it at 90 degrees (no up or down rotation)
            maxAzimuthAngle={Math.PI / 2} // Restricts horizontal rotation to 45 degrees to the right
            minAzimuthAngle={-Math.PI / 2.3}
+           mouseButtons={{
+            LEFT: 0, // Left-click is allowed (rotate horizontally)
+            MIDDLE: 0, // Middle mouse button (scroll) is disabled
+            RIGHT: null, // Disable right-click drag functionality
+          }}
         />
         <MemoizedSharkModel isMobile={isMobile} />
       </Suspense>
