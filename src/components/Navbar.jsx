@@ -33,13 +33,13 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6 justify-between items-center`}>
+    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex '}  {${isSmallScreen ? 'flex-row gap-3' : 'flex-row gap-6'} justify-between items-center`}>
       {navLinks.map((link) => (
         <li
           key={link.id}
           className={`${
             active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
-          } hover:text-white ${isSmallScreen ? 'text-[13px]' : 'text-[20px]'} font-medium cursor-pointer`}
+          } hover:text-white ${isSmallScreen ? 'text-[14px]' : 'text-[20px]'} font-medium cursor-pointer`}
           onClick={() => {
             setActive(link.title);
             if (isSecondary) {
@@ -52,7 +52,7 @@ const Navbar = () => {
       ))}
       <li
         className={`text-$
-          {isSecondary ? 'white' : 'white'} hover:text-white ${isSmallScreen ? 'text-[13px]' : 'text-[20px]'} font-medium cursor-pointer`}
+          {isSecondary ? 'white' : 'white'} hover:text-white ${isSmallScreen ? 'text-[14px]' : 'text-[20px]'} font-medium cursor-pointer`}
       >
         <a href="https://jaysteele13.github.io/jay-portfolio/Jay_Steele_CV.pdf" rel="noopener noreferrer" target='_blank'>Resume</a>
       </li>

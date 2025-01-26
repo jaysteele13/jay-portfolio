@@ -4,6 +4,7 @@ import {
   SurferCanvas,
   SharkCanvas,
   StarsCanvas,
+  BeachCanvas
 } from "./canvas";
 
 import Hero from "./Hero";
@@ -26,5 +27,6 @@ export {
   BallCanvas,
   SurferCanvas,
   StarsCanvas,
-  SharkCanvas
+  SharkCanvas,
+  BeachCanvas
 };
