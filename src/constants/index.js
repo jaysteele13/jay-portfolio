@@ -124,7 +124,7 @@ export const projects = [
     source_code_link: "https://github.com/jaysteele13/moods_on_display",
   },
   {
-    name: "JSurf",
+    name: "Gnarly",
     description:
       "Barebones Surf Forecasting Application designed for the north coast.",
     tags: [
