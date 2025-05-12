@@ -50,7 +50,7 @@ const Hero = () => {
 
           
 
-        {isSmallScreen ? <BeachCanvas/>  : <SharkCanvas/>}
+        {<BeachCanvas/> }
 
         {isSmallScreen ? (
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
