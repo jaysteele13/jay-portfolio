@@ -27,6 +27,7 @@ import causeway from "./company/causeway.png";
 
 // Import my images
 import moods from "./projects/moods_on_display.png";
+import milo from "./projects/milo.jpeg";
 import ram_watcher from "./projects/ram_watcher.png";
 import ribit from "./projects/ribit.jpeg";
 import jsurf from "./projects/white_rocks.png";
@@ -83,5 +84,6 @@ export {
   liberty,
   lsfx,
   causeway,
-  linkedin
+  linkedin,
+  milo
 };

@@ -28,7 +28,8 @@ import {
   ribit,
   liberty,
   lsfx,
-  causeway
+  causeway,
+  milo
 } from "../assets";
 
 export const navLinks = [
@@ -122,6 +123,23 @@ export const projects = [
     ],
     image: moods,
     source_code_link: "https://github.com/jaysteele13/moods_on_display",
+  },
+  {
+    name: "Milo Chatbot ",
+    description:
+      "Stationary Robot Companion that has surf and weather forecasting abilities, a snarky attitude and a has a move or two #boogyTime",
+    tags: [
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Rasberry Pi", color: "green-text-gradient" },
+      { name: "Electronics", color: "green-text-gradient" },
+      { name: "Machine Learning", color: "pink-text-gradient" },
+      { name: "Networking", color: "green-text-gradient" },
+      { name: "Asynchronous Programing", color: "green-text-gradient" },
+      { name: "Facial Tracking and Recognition", color: "blue-text-gradient" },
+
+    ],
+    image: milo,
+    source_code_link: "https://github.com/jaysteele13/buddy-milo",
   },
   {
     name: "Gnarly",
